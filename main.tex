@@ -1,0 +1,80 @@
+%\documentclass[preprint,12pt,authoryear]{elsarticle}
+%% \documentclass[final,1p,times,authoryear]{elsarticle}
+%% \documentclass[final,1p,times,twocolumn,authoryear]{elsarticle}
+%% \documentclass[final,3p,times,authoryear]{elsarticle}
+\documentclass[final,3p,times,twocolumn,authoryear]{elsarticle}
+%% \documentclass[final,5p,times,authoryear]{elsarticle}
+%% \documentclass[final,5p,times,twocolumn,authoryear]{elsarticle}
+
+\usepackage{amssymb}
+
+\journal{Indonesian Journal of Science \& Technology}
+
+\begin{document}
+
+\begin{frontmatter}
+
+%% Title, authors and addresses
+
+%% use the tnoteref command within \title for footnotes;
+%% use the tnotetext command for theassociated footnote;
+%% use the fnref command within \author or \address for footnotes;
+%% use the fntext command for theassociated footnote;
+%% use the corref command within \author for corresponding author footnotes;
+%% use the cortext command for theassociated footnote;
+%% use the ead command for the email address,
+%% and the form \ead[url] for the home page:
+ \title{Judul Artikel dari Jurnal}
+ \tnotetext[label1]{}
+ \author{Rolly Maulana Awangga\corref{cor1}\fnref{label2}}
+ \ead{awangga@poltekpos.ac.id}
+ \ead[url]{home page}
+ \fntext[label2]{}
+ \cortext[cor1]{}
+ \address{Address\fnref{label3}}
+ \fntext[label3]{}
+
+%%%\title{Judul Artikel}
+
+%% use optional labels to link authors explicitly to addresses:
+%% \author[label1,label2]{}
+%% \address[label1]{}
+%% \address[label2]{}
+
+%\author{}
+
+%\address{}
+	\input{section/abstract.tex}
+
+\end{frontmatter}
+
+%% \linenumbers
+
+%% main text
+\input{section/1.tex}
+
+\input{section/2.tex}
+
+\input{section/3.tex}
+
+\input{section/4.tex}
+
+\input{section/5.tex}
+
+\input{section/6.tex}
+
+%% The Appendices part is started with the command \appendix;
+%% appendix sections are then done as normal sections
+%% \appendix
+
+\section{REFERENCES}
+\label{references}
+
+
+\bibliographystyle{elsarticle-harv} 
+\bibliography{references}
+
+\end{document}
+
+\endinput
+

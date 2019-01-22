@@ -1,0 +1,190 @@
+%%class
+\documentclass{iaesarticle3}
+
+%%required package. add for your convenient, but do not remove the initial
+\usepackage{amsmath, amsfonts, amssymb, float, fancyhdr}
+\usepackage[scaled]{uarial}
+\usepackage[figuresright]{rotating}
+\usepackage{authblk, graphicx, indentfirst, lastpage, lipsum}
+\setlength{\affilsep}{0cm}
+\renewcommand\Authfont{\normalsize}
+\renewcommand\Affilfont{\normalfont\small}
+\usepackage{subfig, caption, epstopdf}
+\usepackage[left=3cm, right=3cm, top=3cm, bottom=3cm, includefoot]{geometry}
+\usepackage{caption}
+\captionsetup{labelsep=period}
+\usepackage{titlesec}
+\titleformat{\section}
+  {\normalfont\normalsize\bfseries}{\thesection}{1em}{}
+\titlespacing*{\section}{0cm}{0.7cm}{0cm}
+\titlespacing*{\subsection}{0cm}{0.5cm}{0cm}
+
+%%leave copyright info to the editor
+\CopyrightLine[Copyright]{2013}{Universitas Ahmad Dahlan. All rights reserved.}
+
+%%author
+\author[*]{\bfseries First Author}
+\author[ ]{\bfseries Second Author}
+\author[ ]{\bfseries Third Author}
+%%author's affiliation
+\affil[ ]{Institution/affiliation}
+\affil[ ]{addres, telp/fax of institution/affiliation}
+\affil[*]{corresponding author, e-mail: xxxx@xxxx.xxx}
+
+%%title and shortitle (for footer)
+\title{A Title Should Be the Fewest Possible Words That Accurately Describe the Content of the Paper}
+\shorttitle{Title of manuscript is short and clear, implies research results (First Author)}
+
+%%starting
+\begin{document}
+
+%%indentation. do not change
+\setlength{\parindent}{1.27cm}
+
+%%header and footer setting. do not change
+\pagestyle{fancy}
+\fancyhfoffset{0cm}
+
+%%journal info
+\journalname{TELKOMNIKA Indonesian Journal of Electrical Engineering}
+\journalshortname{TELKOMNIKA}
+\revhistory{Received May 9, 201x; Revised August 3, 201x; Accepted August 16, 201x}
+\vol{x}
+\no{x}
+\doi{10.11591/telkomnika.vXiY.abcd}
+\months{April}
+\years{2013}
+\issn{2302-4046}
+
+%%build title
+\maketitle
+
+\begin{abstract}
+\textit{\indent
+%% Text of abstract
+A well-prepared abstract enables the reader to identify the basic content of a document quickly and accurately, to determine its relevance to their interests, and thus to decide whether to read the document in its entirety. The Abstract should be informative and completely self-explanatory, provide a clear statement of the problem, the proposed approach or solution, and point out major findings and conclusions. The Abstract should be 100 to 200 words in length. The abstract should be written in the past tense. Standard nomenclature should be used and abbreviations should be avoided. No literature should be cited. The keyword list provides the opportunity to add keywords, used by the indexing and abstracting services, in addition to those already present in the title. Judicious use of keywords may increase the ease with which interested parties can locate our article.
+%%
+}
+\end{abstract}
+
+\begin{keyword}
+\textit{
+%%write keyword here. separate by comma (,)
+maximum 5 keywords from paper
+%%
+}
+\end{keyword}
+
+
+%% main text
+
+\section{Introduction}
+\label{}
+The main text format consists of a flat left-right columns on A4 paper (quarto). The margin text from the left, right, top, and bottom 3 cm. The manuscript is written in Microsoft Word, single space, Arial 10pt and maximum 12 pages, which can be downloaded at the website: http://www.telkomnika.ee.uad.ac.id
+\par
+A title of article should be the fewest possible words that accurately describe the content of the paper. Omit all waste words such as "A study of ...", "Investigations of ...", "Implementation of ...", "Observations on ...", "Effect of.....", "Analysis of ...", "Design of ..." etc. Indexing and abstracting services depend on the accuracy of the title, extracting from it keywords useful in cross-referencing and computer searching. An improperly titled paper may never reach the audience for which it was intended, so be specific.
+\par
+The Introduction should provide a clear background, a clear statement of the problem, the relevant literature on the subject, the proposed approach or solution, and the new value of research which it is innovation. It should be understandable to colleagues from a broad range of scientific disciplines. Organization and citation of the bibliography are made in Vancouver style in sign \cite{Li}, \cite{Arulmozhiyal} and so on. The terms in foreign languages are written italic (italic). The text should be divided into sections, each with a separate heading and numbered consecutively. The section/subsection headings should be typed on a separate line, e.g., 1. Introduction \cite{Zhang}. Authors are suggested to present their articles in the section structure: Introduction - the comprehensive theoretical basis and/or the Proposed Method/Algorithm - Research Method - Results and Discussion – Conclusion.
+\par
+Literature review that has been done author used in the chapter "Introduction" to explain the difference of the manuscript with other papers, that it is innovative, it are used in the chapter "Research Method" to describe the step of research and used in the chapter "Results and Discussion" to support the analysis of the results \cite{Arulmozhiyal}. If the manuscript was written really have high originality, which proposed a new method or algorithm, the additional chapter after the "Introduction" chapter and before the "Research Method" chapter can be added to explain briefly the theory and/or the proposed method/algorithm \cite{Zhang}.
+
+\section{Research Method}
+\label{}
+Explaining research chronological, including research design, research procedure (in the form of algorithms, Pseudocode or other), how to test and data acquisition \cite{Li}-\cite{Zhang}. The description of the course of research should be supported references, so the explanation can be accepted scientifically \cite{Arulmozhiyal}, \cite{Yinhai}.
+\par
+Tables and Figures are presented center, as shown below and cited in the manuscript.\\
+
+\begin{table}[h]
+\caption{The Performance of ...}
+\centering
+\begin{tabular}{lcr}
+\hline
+Variable & Speed (rpm) & Power (kW) \\
+\hline
+x & 10 & 8.6 \\
+y & 15 & 12.4 \\
+z & 20 & 15.3 \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.5]{figure1}
+\caption{Effects of selecting different switching under dynamic condition}
+\end{figure}
+
+\section{Result and Analysis}
+\label{}
+In this section, it is explained the results of research and at the same time is given the comprehensive discussion. Results can be presented in figures, graphs, tables and others that make the reader understand easily \cite{Arulmozhiyal}, \cite{lamport}. The discussion can be made in several sub-chapters.
+
+\subsection{Equations}
+Equations should be placed at the center of the line and provided consecutively with equation numbers in parentheses flushed to the right margin, as in (1). The use of Microsoft Equation Editor or MathType is preferred.
+\\
+\begin{equation}
+E_v - E = \frac{\hbar}{2.m}(k_x^2 + k_y^2)
+\end{equation}
+\\
+All symbols that have not been mentioned in the equation should be explained in the following text.
+
+\subsection{Citations}
+Proper citation of other works should be made to avoid plagiarism. When referring to a reference item, please use the reference number as in \cite{Li} or \cite{Li, Arulmozhiyal, Zhang, Yinhai, lamport, knuth} for multiple references. The use of "Ref \cite{lamport}..." should be employed for any reference citation at the beginning of sentence. For any reference with more than 3 or more authors, only the first author is to be written followed by et al (e.g. in \cite{Yinhai}).  Examples of reference items of different categories shown in the References section. Each items in the references section should be typed using 9pt font size.
+
+\section{Conclusion}
+\label{}
+Provide a statement that what is expected, as stated in the "Introduction" chapter can ultimately result in "Results and Discussion" chapter, so there is compatibility. Moreover, it can also be added the prospect of the development of research results and application prospects of further studies into the next (based on result and discussion).
+
+\section*{Acknowledgement}
+\label{}
+The acknowledgment section is optional. The funding source of the research can be put here.
+
+%% The Appendices part is started with the command \appendix;
+%% appendix sections are then done as normal sections
+%% \appendix
+
+%% \section{}
+%% \label{}
+
+%% References
+%%
+%% Following citation commands can be used in the body text:
+%% Usage of \cite is as follows:
+%%   \cite{key}         ==>>  [#]
+%%   \cite[chap. 2]{key} ==>> [#, chap. 2]
+%%
+
+%% References with BibTeX database:
+
+\bibliographystyle{IEEEtran}
+%\bibliography{<your-bib-database>}
+
+%% Authors are advised to use a BibTeX database file for their reference list.
+%% The provided style IEEEtran.bst formats references is generally used.
+
+%% For references without a BibTeX database:
+
+ \begin{thebibliography}{4}
+
+%% \bibitem must have the following form:
+%%   \bibitem{key}...
+%%
+
+ \bibitem{Li} X. S. Li., et al., "Analysis and Simplification of Three-Dimensional Space Vector PWM for Three-Phase Four-Leg Inverters," \textsl{IEEE Transactions on Industrial Electronics}, vol. 58, pp. 450-464, Feb 2011.
+
+ \bibitem{Arulmozhiyal}	R. Arulmozhiyal and K. Baskaran, "Implementation of a Fuzzy PI Controller for Speed Control of Induction Motors Using FPGA," \textsl{Journal of Power Electronics}, vol. 10, pp. 65-71, 2010.
+
+ \bibitem{Zhang} D. Zhang, et al., "Common Mode Circulating Current Control of Interleaved Three-Phase Two-Level Voltage-Source Converters with Discontinuous Space-Vector Modulation," \textsl{2009 IEEE Energy Conversion Congress and Exposition}, Vols 1-6, pp. 3906-3912, 2009.
+
+ \bibitem{Yinhai}	Z. Yinhai, et al., "A Novel SVPWM Modulation Scheme," in \textsl{Applied Power Electronics Conference and Exposition, 2009. APEC 2009. Twenty-Fourth Annual IEEE}, 2009, pp. 128-131.
+ 
+ \bibitem{lamport} Leslie Lamport. \textsl{\LaTeX\ -- A Document Preparation System}, 2nd edition. Addison-Wesley, Reading, MA, 1994.
+ 
+ \bibitem{knuth} Donald E. Knuth. \textsl{Computers and Typesetting Vol.\ A--E}. Addison-Wesley, Reading, MA, 1986
+
+ \end{thebibliography}
+
+
+\end{document}
+
+%%
+%% End of file `telkomnika.tex'.
